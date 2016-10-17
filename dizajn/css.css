@@ -1,0 +1,80 @@
+/* design ..:: sheshnjak ::..   www.tomislavdekovic.iz.hr
+boje: crni tekst, bila pozadina
+	kontejner	#DFDFDF
+	a			#0066AA
+	a:hover		#FF6600
+*/
+
+
+*{margin:0;padding:0;}
+body{font-family:Verdana,Helvetica,sans-serif;font-size:75%;line-height:1.4;background-image:url('body.png');color:#000;}
+a{color:#0066AA;text-decoration:none;}
+a:hover{color:#FF6600;}
+img{border:none;}
+#glavniTekst h1,#glavniTekst h2,#glavniTekst h3{margin:-30px 0 0 33px;font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;}
+#glavniTekst h4{font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;line-height:28px;background-color:#FFF;padding-left:35px;}
+#glavniTekst h1{font-size:26px;line-height:28px;}
+#glavniTekst h2{font-size:22px;line-height:28px;}
+#glavniTekst h3{font-size:20px;line-height:28px;}
+#glavniTekst h5{font-size:16px;line-height:26px;padding-left:10px;font-family:Georgia, Times New Roman, Times, serif;}
+#zaglavlje, .clanak, .clanak> span, #linkovi, #linkovi span.linkoviVrh, #linkovi span.linkoviDno {background:transparent url(pozadine.png) scroll no-repeat;}
+.clanak p,.clanak ul,.clanak div#gmap,.clanak div.slike, #linkovi ul, #glavniTekst h4, #glavniTekst h5{background:#FFF url(desniRub.png) right repeat-y;}
+#glavniTekst img{padding:10px;}
+#glavniTekst table{margin:5px 5px 5px 5px;float:left;border:1px solid #999;}
+#glavniTekst table td, #glavniTekst table th{border:1px solid #999;padding:2px;}
+#kontejner{background-color:#DFDFDF;border-left:1px solid #FFF;border-right:1px solid #FFF;margin:0px auto;width:798px;color:#494949;text-align:justify;}
+#zaglavlje{width:798px;height:179px;}
+#zaglavlje a img{position:absolute;top:3px;padding-left:30px;}
+#zaglavlje div img{margin-left:26px;}
+#glavniTekst{margin-left:236px;width:543px;}
+.clanak{background-position:0 -224px;padding-top:41px;margin-bottom:10px;}
+.clanak p{padding:8px 15px 0 8px ;}
+.clanak p img,.clanak img{padding:0;margin:-10px 5px 0 0px}
+.clanak ul{padding:8px 15px 0 8px ;}
+.clanak li{list-style-image:none;list-style-position:inside;}
+.clanak ul.kontakt{font-size:14px;font-weight:bold;}
+ul.galerija {list-style:none;}
+ul.galerija li {margin:-3px;padding:6px;height:150px;width:150px;text-align:center;display:inline-block;}
+div.slike img{margin-right:-10px;}
+.clanak> span{background-position:0 -268px;height:15px;display:block;}
+img.naslov{}
+.livo{float:left;}
+.desno{float:right;}
+#linkovi{float:left;margin-left:20px;width:204px;}
+#linkovi span.linkoviVrh{display:block;height:39px;background-position:0 -284px;}
+#linkovi span.linkoviDno{background-position:0 -328px;display:block;height:15px;}
+#linkovi ul{padding:0 25px 0 17px;}
+#linkovi li{padding:6px 0 8px;list-style-image:url('link.png');list-style-position:inside;border-bottom:1px dotted #AAA;}
+#linkovi li a{font-family:Georgia, Times New Roman, Times, serif;margin-left:-14px;font-weight:bold;font-size:17px;}
+#linkovi li a span{color:#ccc;font-size:10px;font-family:Verdana,Helvetica,sans-serif;font-weight:normal;}
+#linkovi li a:hover{}
+/*  .trenutnaStranica span{color:#000;}*/
+#podnozje{margin:5px 0 0 226px;padding:3px 14px 5px 0;text-align:center;}
+#podnozje a{margin:0 50px 0 50px;padding:5px;}
+#podnozje a:hover{padding:3px;border:2px dotted #FFF;}
+#copyright a{float:right;margin-top:-20px;color:#FFF;font-size:9px;}
+#copyright a:hover{color:#494949;}
+#gmap {width:543px;height:500px;}
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6{display:none;}
+#formular{float:right;width:250px;margin-top:9px;text-align:right;}
+#formular span{position:absolute;width:230px;font-variant:small-caps;color:#999;}
+#formular label input,#formular label textarea{width:230px;text-align:left;margin-bottom:18px;}
+#formular label input.button{width:75px;margin-right:20px;text-align:center;}
+
+
+#lbOverlay {position: fixed;z-index: 9999;left: 0;top: 0;width: 100%;height: 100%;background-color: #000;cursor: pointer;}
+#lbCenter, #lbBottomContainer {position: absolute;z-index: 9999;overflow: hidden;}
+#lbCenter {background-color: #fff;}
+.lbLoading {background: #fff url(loading.gif) no-repeat center;}
+#lbImage {position: absolute;left: 0;top: 0;border: 1px solid #fff;background-repeat: no-repeat;}
+#lbPrevLink, #lbNextLink {display: block;position: absolute;top: 0;width: 50%;outline: none;border: none;}
+#lbPrevLink {left: 0;}
+#lbPrevLink:hover {background: transparent url(prev.png) no-repeat 0 35%;}
+#lbNextLink {right: 0;}
+#lbNextLink:hover {background: transparent url(next.png) no-repeat 100% 35%;}
+#lbBottom {border: 1px solid #fff;padding: 5px;border-top-style: none;}
+#lbCloseLink {display: block;float: right;margin-top: 32px;outline: none;}
+#lbCaption, #lbNumber {margin-right: 71px;}
+#lbNumber {text-align:left;color:#666;}
+#lbCaption {color: #FFF;font-weight: bold;text-align: center;}
+#lbCaption div {font-weight: normal;}
