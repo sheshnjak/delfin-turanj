@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="hr" xmlns="http://www.w3.org/1999/xhtml" lang="en-EN"><!-- InstanceBegin template="/Templates/en.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Autokamp</title>
+<!-- InstanceEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="dizajn/css.css" rel="stylesheet" type="text/css" />
+<script src="dizajn/jquery.js" type="text/javascript"></script>
+<script src="dizajn/jquery.plugins.js" type="text/javascript"></script>
+<script src="dizajn/js.js" type="text/javascript"></script><script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script type="text/javascript"><!-- 
+$(document).ready(function(){
+jQuery.extend({	kntktTest: function(){	// RegExp test točnosti formulara
+if(	/[\w-_]+\s[\w-_]+/.test($("input#name").val()) && /[\w-]+@[\w-]+\.\w+/.test($("input#email").val()) && $("textarea#message").val().length>15 ) {$("form#form input.button:eq(1)").removeAttr("disabled");}
+else $("form#form input.button:eq(1)").attr("disabled","disabled");
+}});
+
+$.kntktTest();	// validacija kontakt formulara
+$("textarea#message").keypress(function(){$.kntktTest()});
+$("form#form").change(function(){$.kntktTest()});
+// animacija labela u formularu
+$("form input, form textarea").focus(function(){ $(this).siblings("span").animate({"margin-top":-15});})
+.blur(function(){ if($(this).val()=="") $(this).siblings("span").animate({"margin-top":0});})
+.each(function(){ if($(this).val()!=="") $(this).siblings("span").css("margin-top",-15);});
+$("form#form input.button:eq(0)").click(function(){
+$("form input, form textarea").siblings("span").animate({"margin-top":0});
+});
+
+function initialize() {
+	var latlng = new google.maps.LatLng(43.9595, 15.4143);
+	var myOptions = {
+		zoom: 13,
+		center: latlng,
+		mapTypeId: google.maps.MapTypeId.HYBRID,
+		mapTypeControl: true,
+		mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+		}
+	};
+	var map = new google.maps.Map(document.getElementById("gmap"), myOptions);
+	var adresa = new google.maps.Marker({
+		position: new google.maps.LatLng(43.965918, 15.414323),
+		map: map, 
+		title:"Delfin Turanj"
+		});
+	var adresaW = new google.maps.InfoWindow({content:'Ovdje se nalazi naša kuća.'});
+	google.maps.event.addListener(adresa, 'click', function() {adresaW.open(map,adresa);});
+}
+
+if(typeof google){initialize();}
+});
+//--></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="kontejner">
+	<div id="zaglavlje">
+		<div><img src="dizajn/panorama.jpg" /></div>
+		<a href="index-en.html"><img src="dizajn/dupin.png" /></a>
+	</div>
+	<div id="linkovi">
+		<span class="linkoviVrh">&nbsp;</span>
+		<ul>
+			<li><a href="index-en.html">Home page<br />
+<span>about us</span></a></li>
+			<li><a href="apartmani-en.html">Apartments<br />
+			    <span>apartments offer</span></a></li>
+			<li><a href="autokamp-en.html">Autocamp<br />
+			    <span>autocamp offer</span></a></li>
+			<li><a href="turanj-en.html">Turanj<br />
+			<span>about Turanj</span></a></li>
+			<li><a href="fotografije-en.html">Photos<br />
+			    <span>beach and surroundings</span></a></li>
+<li><a href="index.html">Hrvatski<br />
+			  <span>stranice na hrvatskom</span></a></li>
+		</ul>
+	<span class="linkoviDno">&nbsp;</span></div>
+	<div id="glavniTekst"><!-- InstanceBeginEditable name="glavniTekst" -->
+	<div class="clanak">
+	  <h1>Autocamp</h1>
+	  <p>In front of our house, there is a small and quiet autocamp that is shaded from the sun and isolated from the road, providing nice accommodation in the pine and olive trees shade only 70 meters away from the sea and 500 meters from the center of Turanj with main beach. </p>
+	  <p>Camp surface is around 150 m<sup>2</sup> southern from the house, plus toiletes and bathrooms which are placed on the north side of the house (providing visual barrier). We also offer all-year use of the camp, so that our guests can pick their favourite spot and leave their camper over winter for us to keep.</p><span>&nbsp;</span>
+</div>
+	<div class="clanak">
+		<h2>Autocamp plan and equipment</h2>
+		<p><a rel="lbx-akamp" href="slike/kamp.jpg" title="Part of our autocamp."><img src="slike/mkamp.jpg" alt="kamp" /></a><a rel="lbx-akamp" href="slike/wc.jpg" title="Bathroom and toiletes part."><img src="slike/mwc.jpg" alt="wc" class="livo" /></a>Autocamp has bathroom part with laundry washers and toilets, placed on the north side of the house, providing privacy and visual barrier from the camp. Equipment fulfills all safety standards, so our guests can count on pleasant accommodation.</p>
+		<span>&nbsp;</span></div>
+<!-- InstanceEndEditable --></div>
+	<div id="podnozje">
+	<a class="emajl" href="emajacanATnet.hr" title="naš email"><img src="dizajn/email.png" alt="emajacan@net.hr" /></a>
+	<a href="javascript:window.print();" title="ispis stranice"><img src="dizajn/print.png" alt="print" /></a>
+	<a href="#" title="povratak na početak stranice"><img src="dizajn/strelica-gori.png" alt="top" /></a>
+    </div>
+    <span id="copyright"><a href="http://www.tomislavdekovic.iz.hr/" title="">©..:: sheshnjak ::.. </a></span>
+
+</div>
+
+<!-- These extra divs/spans may be used as catch-alls to add extra imagery. -->
+<div id="extraDiv1"></div><div id="extraDiv2"></div><div id="extraDiv3"></div>
+<div id="extraDiv4"></div><div id="extraDiv5"></div><div id="extraDiv6"></div>
+
+</body>
+<!-- InstanceEnd --></html>
